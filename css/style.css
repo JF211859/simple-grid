@@ -3,6 +3,12 @@
 
 /* 1. Make the text centered */
 
+h1, h2{
+  text-align: center;
+  margin: 10px;
+  font-size: 200%;
+}
+
 /* 2. Give it a margin of 10px */
 
 /* 3. Font size should be twice the normal size  */
@@ -17,6 +23,19 @@
   /******* style the grid container  *******/
 
   /* 1. Give it a width of 800px */
+
+  .grid {
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 10px;
+    background-color: #91f321;
+    background-image:url("../images/background.jpg");
+    border: solid black 3px;
+    border-radius: 20px;
+    justify-content: space-around;
+  }
 
   /* 2. Center it in the middle of the body */
 
@@ -46,6 +65,14 @@
 /******  Style the divs inside of the grid ******/
 
 /* 1. Give them a 5px solid white border */
+
+.grid > div {
+  background-color: rgba(231, 157, 224, 0.5);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+
+}
 
 /* 2. Give them a background color of rgba(231, 157, 224, 0.5) */
 
